@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css" />
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Конвертер гривны</h1>
+      <div class="container">
+        <div class="input-group mb-3">
+          <input type="text" id="hrn" class="form-control" placeholder="Введите сумму" aria-describedby="button-addon2"> 
+          <button class="btn btn-outline-secondary" type="button" id="calculate" onclick="myFunction()">Рассчитать</button>
+        </div> 
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class = "p-3 border bg-light" >
+              <h3 class="text-start">Текущий курс валют (<span id="newData"></span>):</h3>
+                <p>Dollars: <span id="dollars">28.3</span></p>
+                <p>Euro: <span id="euro">34.1</span></p>
+                <p>Ruble: <span id="ruble">0.33</span></p>
+            </div>
+          </div> 
+          <div class="col">
+            <div class = "p-3 border bg-light">
+              <h3 class="text-center">Рассчет суммы в иностранных валютах:</h3>
+              <p class="fs-2">Dollars: <span id="d"></span></p>
+              <p class="fs-2">Euro: <span id="e"></span></p>
+              <p class="fs-2">Ruble: <span id="r"></span></p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
